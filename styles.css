@@ -1,0 +1,130 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* variables */
+
+:root {
+    --primary-color: #555;
+}
+
+/* base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html */
+
+header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    color: var(--primary-color);
+    display: block;
+    margin: 2vw;
+}
+
+header::after {
+    background: var(--primary-color);
+    height: 0.5vh;
+    width: 0%;
+    display: block;
+    content: '';
+    position: relative;
+    top: -2vh;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+header:hover::after {
+   width: 100%;
+}
+
+input {
+    height: 4.5vh;
+    width: 25vw;
+    min-width: 375px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.25em;
+    text-indent: 0.5vw;
+}
+
+label {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    
+    font-size: 1.5em;
+}
+
+/* classes */
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.wrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 10vh;
+}
+
+.wrapper-after {
+    height: auto;
+}
+
+p.author {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.2em;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+}
+
+/* js */
+
+.warn {
+    color: crimson;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 0.75em;
+}
+
+.success {
+    color: lime;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+
+.fail {
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+
+.output {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    width: 80vw;
+    height: auto;
+    word-wrap: break-word;
+    text-align: center;
+    position: relative;
+    top: auto;
+    margin: 2vw;
+}
+
+.quit {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 5vw;
+}
